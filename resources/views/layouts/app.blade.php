@@ -63,7 +63,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                     
+
                         <li> <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -84,27 +84,23 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-               
+
                             <a class="nav-link" href="/home">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            
-                            <a class="nav-link" href="#">
+
+                            <a class="nav-link" href="/paket">
                                 <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
                                 Daftar Paket
                             </a>
-                            
+
                         </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        {{ Auth::user()->name }}
                     </div>
                 </nav>
             </div>
-            
-            
+
+
             <div id="layoutSidenav_content">
                 <main class="py-4">
                 @yield('content')
