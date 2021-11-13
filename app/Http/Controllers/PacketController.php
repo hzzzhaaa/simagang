@@ -25,7 +25,7 @@ class PacketController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.tambah_paket');
     }
 
     /**

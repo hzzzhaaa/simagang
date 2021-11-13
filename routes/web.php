@@ -20,3 +20,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/paket', [App\Http\Controllers\PacketController::class, 'index'])->name('paket');
+Route::get('/tambahpaket', [App\Http\Controllers\PacketController::class, 'create'])->name('tambahpaket');
+Route::post('dashboard/paket/store', 'PacketController@store')->name('dashboard.paket.store');
